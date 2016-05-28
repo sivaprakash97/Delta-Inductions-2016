@@ -1,0 +1,191 @@
+<html>
+
+
+<head>
+
+
+<style>
+
+
+body
+{
+text-align:center;
+background-image:url("opm.jpg");
+}
+
+
+h1
+{
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+background-color:white;
+font-weight:bold;
+margin-top:50px;
+font-size:70px;
+}
+
+#days
+{
+outline:15px solid yellow;
+background: white;
+position: relative;
+display: inline-block;
+padding: 10px;
+border:2px solid;
+margin-left:50px;
+margin-top:100px;
+font-size:30px;
+}
+
+#hours
+{
+outline:15px solid yellow;
+background: white;
+position: relative;
+display: inline-block;
+padding: 10px;
+border:2px solid;
+margin-left:50px;
+margin-top:100px;
+font-size:30px;
+}
+
+
+#minutes
+{
+outline:15px solid yellow;
+background: white;
+position: relative;
+display: inline-block;
+padding: 10px;
+border:2px solid;
+margin-left:50px;
+margin-top:100px;
+font-size:30px;
+}
+
+#seconds
+{
+outline:15px solid yellow;
+background: white;
+position: relative;
+display: inline-block;
+padding: 10px;
+border:2px solid;
+margin-left:50px;
+margin-top:100px;
+font-size:30px;
+}
+
+#p1
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:75px;
+background-color:white;
+font-weight:bold;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h1> ONE PUNCH MAN S02E01 RELEASING AFTER </h1>
+
+<p id="days"></p>
+<p id="hours"></p>
+<p id="minutes"></p>
+<p id="seconds"></p>
+
+
+
+<script>
+
+var millisec,day,hr,minute,sec,present,future;
+var y=setInterval(timer,1000);
+
+function timer()
+{
+present= Date.parse(new Date());
+future= Date.parse("July 11, 2016");
+millisec= future-present;
+day=Math.floor(millisec/(24*60*60*1000));
+hr=Math.floor(((millisec/(60*60*1000))%24));
+minute=Math.floor(((millisec/(60*1000))%60));
+sec=Math.floor((millisec/1000)%60);
+
+
+document.getElementById("days").innerHTML = day + "<br>Days";
+document.getElementById("hours").innerHTML = hr + "<br>Hours";
+document.getElementById("minutes").innerHTML = minute + "<br>Minutes";
+document.getElementById("seconds").innerHTML = sec + "<br>Seconds";
+
+if(millisec=0)
+{
+clearInterval(y);
+}
+
+}
+
+</script>
+
+<p id="p1"> Be patient Senpai!!</p>
+<p><img src="opm.gif" style="width:304px;height:228px;">
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
